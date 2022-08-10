@@ -37,22 +37,22 @@ def depth_sliding_window_count(depths):
 
 # open test and data file
 with open("inputs/day1test.txt", "r+") as file:
-    part1_input = file.read()
+    test_input = file.read()
 file.close()
 
 with open("inputs/day1data.txt", "r+") as file:
-    part2_input = file.read()
+    data_input = file.read()
 file.close()
 
 # call each function with test and data for part 1 and part 2
-test_count = depth_increase_count(part1_input)
+test_count = depth_increase_count(test_input)
 print(f"Part 1 test input increases: {test_count}")
 
-data_count = depth_increase_count(part2_input)
+data_count = depth_increase_count(data_input)
 print(f"Part 1 data input increases: {data_count}")
 
-test_window = depth_sliding_window_count(part1_input)
+test_window = depth_sliding_window_count(test_input)
 print(f"Part 2 test input sliding window increases: {test_window}")
 
-data_window = depth_sliding_window_count(part2_input)
+data_window = depth_sliding_window_count(data_input)
 print(f"Part 2 data input sliding window increases: {data_window}")

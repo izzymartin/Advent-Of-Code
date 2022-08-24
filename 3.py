@@ -28,7 +28,7 @@ def diag_power_rate(diag_report):
     epsilon_rate = int(epsilon_rate_string,2)
     return gamma_rate * epsilon_rate
 
-# function for part 1
+# function for part 2
 #   finds the life support rating of the submarine
 def diag_life_support_rating(diag_report):
     diag_report_split = diag_report.split("\n")
@@ -37,7 +37,7 @@ def diag_life_support_rating(diag_report):
     co2_list = diag_report_split.copy()
     bit_position = 0
 
-    # Looping through list and counting numbers of 1s in each bit position
+    # Looping through list and finding oxygen rating
     while (bit_position < len(diag_report_split[0])):
         bit_count = 0
         line_count = len(oxygen_list) - 1
@@ -54,6 +54,7 @@ def diag_life_support_rating(diag_report):
             line_count -= 1
         bit_position += 1
 
+    # Loop through list as before, but finding co2 rating
     bit_position = 0
     while (bit_position < len(diag_report_split[0])):
         bit_count = 0

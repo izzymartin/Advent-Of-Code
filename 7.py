@@ -11,8 +11,8 @@ def alignment_fuel(input):
     return min(position_fuel)
 
 
-# function for part 1
-#   calculates the minimum fuel usage to align crabs into position
+# function for part 2
+#   calculates the minimum fuel usage to align crabs into position, using the expensive fuel cost
 def alignment_fuel_expensive(input):
     input_split = [int(y) for y in input.split(",")]
     position_fuel = [0]*max(input_split)

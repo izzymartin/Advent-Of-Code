@@ -1,4 +1,4 @@
-# Day 7: The Treachery of Whales
+# Day 8: Seven Segment Search
 
 # helper function to find all the elements of a specified length in a list
 def find_elements_by_length(input_list, length):
